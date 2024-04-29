@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+#root{
+  display: grid;
+  grid-template-areas:
+    'nav header sidebar'
+    'nav content sidebar'
+    'nav content sidebar';
+  grid-template-columns: 200px 1fr 300px;
+  grid-template-rows: 350px 1fr 50px;
+  
+  height: 100%;
+}
+.navigation {
+  grid-area: nav;
+  width: 200px; 
+  height: 100%; 
+  color: #fff; 
+  position: fixed;
+  top: 0;
+  left: 0; 
+  overflow-y: auto; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation ul {
+  list-style-type: none; 
+  padding: 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation li {
+  padding: 10px 15px; 
+  cursor: pointer; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation li:hover {
+  background-color: #444; 
+}
+.post-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 11px 60px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+
+.nav_image {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nav_image img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sidebar_profile {
+  display: flex;
+  padding-top: 15px;
+  margin-top: 210px;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar_profile .name {
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+.sidebar_profile .email {
+  font-size: 13px;
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+.profile-header {
+  grid-area: header;
+  width: calc(100% - 230px); 
+  float: right;
+}
+.gradiant{
+  background-image: linear-gradient(#91baff,#205fff);
+  height:140px;
+  border-radius: 4px 4px 0px 0px;
+  width:1000px;
+}
+.profile-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: -50px;
+  margin-left: 10px; 
+  object-fit: cover; 
+  background-color: black;
+}
+ 
+.profile-name {
+  font-size: 20px;
+  margin-left:20px;
+  color:white;
+}
+
+.profile-handle {
+  font-size: 16px;
+  color: grey;
+  margin-left:20px
+}
+.profile-stats{
+  margin: 15px 0;
+  margin-left:20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.profile-bio{
+  margin-left:20px;
+  color: white;
+}
+.profile-bio a{
+  text-decoration: none; 
+  margin-right: 30px;
+}
+.join-date{
+  color: grey;
+}
+.posts{
+  
+  grid-area: content;
+}
+.post {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 16px;
+  color: #666;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.search-bar input[type=text] {
+  padding: 6px;
+  margin: 8px 0;
+  font-size: 17px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+}
+.profile-suggestion{
+  display: flex;
+  justify-content: space-around;
+  margin:20px 0;
+  
+}
+.profile-suggestion-name{
+  color: white;
+}
+.profile-suggestion-handle{
+  color: gray;
+}
+.profile-suggestion button{
+  background-color: white;
+  color: black;
+  font-size: 11px;
+  border: none;
+  border-radius: 20px;
+  padding: 11px 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.profile-suggestion img {
+  width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.suggestion-list ,.trending-list{
+  background-color: gainsboro ;
+  border-radius: 8px;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+.trending-topic{
+  display: flex;
+  flex-direction: column;
+margin: 20px 5px;
+}
+
+.treanding-post{
+  color: gray;
+}
+
+.treanding-tweet{
+  color: white;
 }
