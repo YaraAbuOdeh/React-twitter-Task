@@ -169,7 +169,10 @@
   display: flex;
   justify-content: space-around;
   margin:20px 0;
-  
+  background-color: inherit; 
+}
+.profile-suggestion div>p{
+  background-color: darkgray;
 }
 .profile-suggestion-name{
   color: white;
@@ -197,17 +200,30 @@
 }
 
 .suggestion-list ,.trending-list{
-  background-color: gainsboro ;
+  background-color: darkgray ;
   border-radius: 8px;
   margin-right: 20px;
   padding-bottom: 5px;
   margin-top: 10px;
 }
 
+.suggestion-list h1,.trending-list h1{
+border-radius: 20px;
+padding:10px 2px;
+font-size:15px ;
+margin-top:20px ; 
+color:white ;
+background-color:darkgray;
+}
+
+
 .trending-topic{
   display: flex;
   flex-direction: column;
-margin: 20px 5px;
+   margin: 6px 5px;
+}
+.trending-topic span{
+  background-color:darkgray;
 }
 
 .treanding-post{

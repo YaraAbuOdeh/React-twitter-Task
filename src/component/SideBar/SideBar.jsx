@@ -10,7 +10,6 @@ export default function SideBar() {
   const trends = [
     { topic: '#ReactJS', tweets: '120K' },
     { topic: '#ReactJS', tweets: '120K' },
-    // ... other trends
   ];
     return (
       <div className="sidebar">
