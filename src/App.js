@@ -1,4 +1,3 @@
-import logo from "./logo192.png";
 import "./App.css";
 import NavigationBar from "./component/NavigationBar/NavigationBar";
 import ProfileHeader from "./component/ProfileHeader/ProfileHeader";
@@ -9,7 +8,7 @@ export default function App() {
   return (
     <>
       <NavigationBar />
-      <ProfileHeader logo={logo} name="React" username="reactjs" />
+      <ProfileHeader />
       <MiddlePanel />
       <SideBar />
     </>
