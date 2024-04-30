@@ -7,7 +7,9 @@ export default function TrendingList({ trends }) {
         {trends.map((trend, index) => (
           <TrendingTopic key={index} {...trend} />
         ))}
+        <button className="show-more">Show more</button>
       </div>
+      
     );
   }
   

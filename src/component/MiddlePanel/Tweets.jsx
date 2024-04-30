@@ -1,6 +1,8 @@
 export default function Tweets({ username, content, retweets, quoteTweets, likes }){
   return (
     <div className="post">
+      <img src="logo192.png" alt={`${username}`} />
+      <div>
       <div className="post-header">
         <span className="username">{username}</span>
       </div>
@@ -12,7 +14,8 @@ export default function Tweets({ username, content, retweets, quoteTweets, likes
         <span>{quoteTweets} Quote Tweets</span>
         <span>{likes} Likes</span>
       </div>
-      <hr></hr>
     </div>
+      </div>
+      
   );
 }
