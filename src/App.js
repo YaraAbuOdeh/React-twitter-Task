@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <NavigationBar />
-      <ProfileHeader logo={logo} name="React" handle="reactjs" />
+      <ProfileHeader logo={logo} name="React" username="reactjs" />
       <MiddlePanel />
       <SideBar />
     </>

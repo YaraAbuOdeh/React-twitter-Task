@@ -3,8 +3,8 @@ import SuggestionList from './SuggestionList';
 import TrendingList from './TrendingList';
 export default function SideBar() {
   const suggestions = [
-    { name: 'React' , handle: 'reactjs' },
-    { name: 'React' , handle: 'reactjs' },
+    { name: 'React' , userName: 'reactjs' },
+    { name: 'React' , userName: 'reactjs' },
   ];
 
   const trends = [

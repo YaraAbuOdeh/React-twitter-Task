@@ -6,6 +6,7 @@ export default function SuggestionList({ suggestions }) {
         {suggestions.map((suggestion, index) => (
           <ProfileSuggestion key={index} {...suggestion} />
         ))}
+        <button className="show-more">Show more</button>
       </div>
     );
   }
