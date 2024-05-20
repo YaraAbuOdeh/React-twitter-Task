@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NavigationBar from "./component/NavigationBar/NavigationBar";
+import ProfileHeader from "./component/ProfileHeader/ProfileHeader";
+import MiddlePanel from "./component/MiddlePanel/MiddlePanel";
+import SideBar from "./component/SideBar/SideBar";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavigationBar />
+      <ProfileHeader />
+      <MiddlePanel />
+      <SideBar />
+    </>
   );
 }
-
-export default App;
